@@ -1,0 +1,232 @@
+[
+  {
+    "name": "Sunflower",
+    "kind": "crop",
+    "durationSec": 60
+  },
+  {
+    "name": "Potato",
+    "kind": "crop",
+    "durationSec": 300
+  },
+  {
+    "name": "Rhubarb",
+    "kind": "crop",
+    "durationSec": 600
+  },
+  {
+    "name": "Pumpkin",
+    "kind": "crop",
+    "durationSec": 1800
+  },
+  {
+    "name": "Zucchini",
+    "kind": "crop",
+    "durationSec": 1800
+  },
+  {
+    "name": "Carrot",
+    "kind": "crop",
+    "durationSec": 3600
+  },
+  {
+    "name": "Yam",
+    "kind": "crop",
+    "durationSec": 3600
+  },
+  {
+    "name": "Cabbage",
+    "kind": "crop",
+    "durationSec": 7200
+  },
+  {
+    "name": "Broccoli",
+    "kind": "crop",
+    "durationSec": 7200
+  },
+  {
+    "name": "Soybean",
+    "kind": "crop",
+    "durationSec": 10800
+  },
+  {
+    "name": "Beetroot",
+    "kind": "crop",
+    "durationSec": 14400
+  },
+  {
+    "name": "Pepper",
+    "kind": "crop",
+    "durationSec": 14400
+  },
+  {
+    "name": "Cauliflower",
+    "kind": "crop",
+    "durationSec": 28800
+  },
+  {
+    "name": "Parsnip",
+    "kind": "crop",
+    "durationSec": 43200
+  },
+  {
+    "name": "Eggplant",
+    "kind": "crop",
+    "durationSec": 57600
+  },
+  {
+    "name": "Corn",
+    "kind": "crop",
+    "durationSec": 72000
+  },
+  {
+    "name": "Onion",
+    "kind": "crop",
+    "durationSec": 72000
+  },
+  {
+    "name": "Radish",
+    "kind": "crop",
+    "durationSec": 86400
+  },
+  {
+    "name": "Wheat",
+    "kind": "crop",
+    "durationSec": 86400
+  },
+  {
+    "name": "Turnip",
+    "kind": "crop",
+    "durationSec": 86400
+  },
+  {
+    "name": "Kale",
+    "kind": "crop",
+    "durationSec": 129600
+  },
+  {
+    "name": "Artichoke",
+    "kind": "crop",
+    "durationSec": 129600
+  },
+  {
+    "name": "Barley",
+    "kind": "crop",
+    "durationSec": 172800
+  },
+  {
+    "name": "Tomato",
+    "kind": "Fruits",
+    "durationSec": 7200
+  },
+  {
+    "name": "Lemon",
+    "kind": "Fruits",
+    "durationSec": 14400
+  },
+  {
+    "name": "Blueberry",
+    "kind": "Fruits",
+    "durationSec": 21600
+  },
+  {
+    "name": "Orange",
+    "kind": "Fruits",
+    "durationSec": 28800
+  },
+  {
+    "name": "Apple",
+    "kind": "Fruits",
+    "durationSec": 43200
+  },
+  {
+    "name": "Banana",
+    "kind": "Fruits",
+    "durationSec": 43200
+  },
+  {
+    "name": "Celestine",
+    "kind": "Fruits",
+    "durationSec": 21600
+  },
+  {
+    "name": "Lunara",
+    "kind": "Fruits",
+    "durationSec": 43200
+  },
+  {
+    "name": "Duskberry",
+    "kind": "Fruits",
+    "durationSec": 86400
+  },
+  {
+    "name": "Grape",
+    "kind": "greenhouse",
+    "durationSec": 43200
+  },
+  {
+    "name": "Rice",
+    "kind": "greenhouse",
+    "durationSec": 115200
+  },
+  {
+    "name": "Olive",
+    "kind": "greenhouse",
+    "durationSec": 140400
+  },
+  {
+    "name": "Wood",
+    "kind": "mining",
+    "durationSec": 7200
+  },
+  {
+    "name": "Stone",
+    "kind": "mining",
+    "durationSec": 14400
+  },
+  {
+    "name": "Iron",
+    "kind": "mining",
+    "durationSec": 28800
+  },
+  {
+    "name": "Gold",
+    "kind": "mining",
+    "durationSec": 86400
+  },
+  {
+    "name": "Crimstone",
+    "kind": "mining",
+    "durationSec": 86400
+  },
+  {
+    "name": "Egg",
+    "kind": "animal",
+    "durationSec": 86400
+  },
+  {
+    "name": "Feather",
+    "kind": "animal",
+    "durationSec": 86400
+  },
+  {
+    "name": "Leather",
+    "kind": "animal",
+    "durationSec": 86400
+  },
+  {
+    "name": "Milk",
+    "kind": "animal",
+    "durationSec": 86400
+  },
+  {
+    "name": "Wool",
+    "kind": "animal",
+    "durationSec": 86400
+  },
+  {
+    "name": "Merino Wool",
+    "kind": "animal",
+    "durationSec": 86400
+  }
+]
