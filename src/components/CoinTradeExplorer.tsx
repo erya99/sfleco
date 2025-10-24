@@ -10,20 +10,35 @@ function classNames(...a: (string | false | undefined)[]) {
   return a.filter(Boolean).join(' ');
 }
 
-/** basit yerel ikon yolu; istersen Table.tsx’teki çoklu aday fonksiyonunu taşıyabilirsin */
-function iconSrc(name: string) {
-  const v = name.trim().toLowerCase().replace(/\s+/g, '_');
-  return `/icons/${v}.png`;
+/** /public/icons için esnek aday üretici (prod'da case-sensitive sorunlarını çözer) */
+function localIconCandidates(name: string): string[] {
+  const raw = name.trim();
+  const lc = raw.toLowerCase();
+  const variants = Array.from(new Set([
+    raw, lc,
+    raw.replace(/\s+/g, ''),  lc.replace(/\s+/g, ''),
+    raw.replace(/\s+/g, '_'), lc.replace(/\s+/g, '_'),
+    raw.replace(/\s+/g, '-'), lc.replace(/\s+/g, '-'),
+  ]));
+  const exts = ['.png', '.webp'];
+  const out: string[] = [];
+  for (const v of variants) for (const ext of exts) out.push(`/icons/${v}${ext}`);
+  return out;
 }
 
 function Img({ name, size = 28 }: { name: string; size?: number }) {
+  const [i, setI] = useState(0);
+  const cands = useMemo(() => localIconCandidates(name), [name]);
+  const src = cands[i];
+  if (!src) return null;
   return (
     <img
-      src={iconSrc(name)}
+      src={src}
       alt={name}
       width={size}
       height={size}
       loading="lazy"
+      onError={() => setI(n => (n + 1 < cands.length ? n + 1 : n))}
       style={{ imageRendering: 'pixelated' }}
       className="rounded-sm ring-1 ring-slate-200 dark:ring-slate-700 bg-white/60 dark:bg-slate-800/60"
     />
