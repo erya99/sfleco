@@ -2,7 +2,9 @@ import { getPriceBook } from '../../lib/market';           // mevcut API fetch f
 import { evaluateCoinTrade } from '../../lib/evaluateCoinTrade';
 import CoinTradeExplorer from '../../components/CoinTradeExplorer';
 
-export const revalidate = Number(process.env.SFL_WORLD_CACHE_SECONDS) || 900;
+export const revalidate = Number(process.env.SFL_WORLD_CACHE_SECONDS ?? 300);
+export const dynamic = (revalidate <= 0) ? 'force-dynamic' : 'auto';
+
 
 export default async function CoinProfitPage() {
   // FLOWER fiyatlarını API’den çek

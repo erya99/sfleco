@@ -3,7 +3,9 @@ import durations from '../data/durations.json';
 import { evaluateEfficiency } from '../lib/evaluate';
 import ResourceExplorer from '../components/ResourceExplorer';
 
-export const revalidate = Number(process.env.SFL_WORLD_CACHE_SECONDS) || 900;
+export const revalidate = Number(process.env.SFL_WORLD_CACHE_SECONDS ?? 300);
+export const dynamic = (revalidate <= 0) ? 'force-dynamic' : 'auto';
+
 
 export default async function Page() {
   const prices = await getPriceBook();
